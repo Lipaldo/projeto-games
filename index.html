@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Regressão de Jogos - TensorFlow.js</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.18.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Regressão Linear - Dataset Games</h1>
+    <p>Treinamento direto no navegador usando TensorFlow.js</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Carregamento Automático do CSV</h2>
+      <p>Arquivo esperado: <strong>games.csv</strong> na pasta do projeto.</p>
+      <button id="loadBtn">Carregar Dados</button>
+      <div id="status"></div>
+    </section>
+
+    <section class="card">
+      <h2>Gráfico de Dispersão + Linha de Regressão</h2>
+      <canvas id="scatterPlot"></canvas>
+    </section>
+
+    <section class="card">
+      <h2>Métricas do Modelo</h2>
+      <div id="metrics"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
